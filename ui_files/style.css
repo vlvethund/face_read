@@ -178,4 +178,45 @@ body {
   overflow: hidden;
   position: relative;
   z-index: -5;
+  margin:0 auto 0 auto
+}
+
+.random_sentence{
+  display: inline-block;
+  margin:50px auto 0 auto;
+
+}
+
+.random_sentence p{
+  display: inline-block;
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+.random_sentence p.dots{
+  animation: blink-dots 1.2s linear infinite alternate
+}
+
+.random_sentence p.dots:nth-child(1){
+  animation-delay: -1.2s;
+}
+.random_sentence p.dots:nth-child(2){
+  animation-delay: -0.7s;
+}
+.random_sentence p.dots:nth-child(3){
+  animation-delay: -0.1s;
+
+}
+
+
+@keyframes blink-dots{
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
