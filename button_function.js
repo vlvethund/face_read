@@ -8,6 +8,8 @@ sentence_arr = [
 
 $("document").ready(function () {
   $(".result_btn").click(function () {
+
+    
     let i = Math.floor(Math.random() * sentence_arr.length);
     $(".showing").css("display", "none");
     $(".main_wrapper").append(
