@@ -218,3 +218,14 @@ body {
     opacity: 0;
   }
 }
+
+.result_btn:hover{
+  transition: 0.3s;
+  background-color: #c79679;
+  color: #0f4c81;
+}
+
+.result_btn:left{
+  transition: 0.3s;
+  background-color: #f5b895;
+}
