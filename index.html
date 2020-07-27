@@ -135,27 +135,40 @@
 
         //alert(typeof parseInt(prediction[1].probability.toFixed(2)));
 
-        var probabilityArr = [];
+        // var probabilityArr = [];
+        // for (let i = 0; i < maxPredictions; i++) {
+        //   probabilityArr[i] = prediction[i].probability.toFixed(2);
+        // }
 
-        for (let i = 0; i < maxPredictions; i++) {
-          probabilityArr[i] = prediction[i].probability.toFixed(2);
-        }
+        // probabilityArr.sort(function (a, b) {
+        //   return b - a;
+        // });
 
-        alert(probabilityArr[0]);
-        alert(probabilityArr[1]);
-        alert(probabilityArr[2]);
-        alert(probabilityArr[3]);
-        alert(probabilityArr[4]);
-        alert(probabilityArr[5]);
-        alert(probabilityArr[6]);
+        // alert(probabilityArr[0]);
+        // alert(probabilityArr[1]);
+        // alert(probabilityArr[2]);
 
-        for (let i = 0; i < maxPredictions; i++) {
-          const classPrediction =
-            prediction[i].className +
-            ": " +
-            prediction[i].probability.toFixed(2);
-          labelContainer.childNodes[i].innerHTML = classPrediction;
-        }
+        // for (let i = 0; i < maxPredictions; i++) {
+        //   const classPrediction =
+        //     prediction[i].className +
+        //     ": " +
+        //     prediction[i].probability.toFixed(2);
+        //   labelContainer.childNodes[i].innerHTML = classPrediction;
+        // }
+
+        prediction.sort(function (a, b) {
+          return b.probability - a.probability;
+        });
+
+        // alert(prediction[0].probability.toFixed(2));
+        // alert(prediction[0].className);
+        // alert(prediction[1].probability.toFixed(2));
+        // alert(prediction[1].className);
+        // alert(prediction[2].probability.toFixed(2));
+        // alert(prediction[2].className);
+
+        labelContainer.innerHTML =
+          "당신의 MBTI 유형은 " + prediction[0].className;
       }
 
       // 사진 업로드 부분
