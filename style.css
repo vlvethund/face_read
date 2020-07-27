@@ -178,16 +178,16 @@ body {
   overflow: hidden;
   position: relative;
   z-index: -5;
-  margin:0 auto 0 auto
+  margin: 0 auto 0 auto;
+  display: block;
 }
 
-.random_sentence{
+.random_sentence {
   display: inline-block;
-  margin:50px auto 0 auto;
-
+  margin: 50px auto 0 auto;
 }
 
-.random_sentence p{
+.random_sentence p {
   display: inline-block;
   text-align: justify;
   font-size: 20px;
@@ -196,23 +196,21 @@ body {
   font-weight: 500;
 }
 
-.random_sentence p.dots{
-  animation: blink-dots 1.2s linear infinite alternate
+.random_sentence p.dots {
+  animation: blink-dots 1.2s linear infinite alternate;
 }
 
-.random_sentence p.dots:nth-child(1){
+.random_sentence p.dots:nth-child(1) {
   animation-delay: -1.2s;
 }
-.random_sentence p.dots:nth-child(2){
+.random_sentence p.dots:nth-child(2) {
   animation-delay: -0.7s;
 }
-.random_sentence p.dots:nth-child(3){
+.random_sentence p.dots:nth-child(3) {
   animation-delay: -0.1s;
-
 }
 
-
-@keyframes blink-dots{
+@keyframes blink-dots {
   0% {
     opacity: 1;
   }
