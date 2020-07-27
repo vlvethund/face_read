@@ -140,6 +140,7 @@ body {
 }
 
 .result_btn {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +165,10 @@ body {
 }
 .image_android {
   height: 200px;
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .image_wrapper {
@@ -171,4 +176,6 @@ body {
   width: 200px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
+  z-index: -5;
 }
